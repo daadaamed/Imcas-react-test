@@ -1,0 +1,32 @@
+/** @format */
+.Row {
+  position: relative;
+}
+.Row > a > img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 250px;
+  width: 300px;
+  margin-right: 10px;
+  transition: transform 450ms;
+  filter: blur(2px);
+  opacity: 0.8;
+}
+
+.Row > a > img:hover {
+  transform: scale(1.2);
+  filter: blur(0px);
+}
+
+.Row__title {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #4285f4;
+  text-align: center;
+  /* padding-top: 30px;
+  padding-bottom: 0px;
+  padding-right: 30px; */
+}
